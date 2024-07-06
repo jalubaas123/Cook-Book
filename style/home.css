@@ -1,0 +1,172 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #DDAFEE;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #835794;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header div img {
+            margin-left: 15px;
+            height: 50px;
+            width: 50px;
+        }
+
+        header div p {
+            margin: 0;
+            margin-left: 10px;
+            font-size: 30px;
+            color: white;
+            text-shadow: 1px 2px 3px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-right: 50px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #835794;
+        }
+
+        main {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: #DDAFEE;
+        }
+
+        .intro h1 {
+            margin: 20px auto;
+            font-size: 2.5em;
+            border: 5px ridge #835794;
+            background-color: white;
+            text-shadow: 2px 3px 4px;
+            text-align: center;
+            padding: 10px;
+            max-width: 80%;
+        }
+
+        .intro p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: justify;
+            margin: 20px auto;
+            text-indent: 50px;
+            max-width: 80%;
+        }
+
+        .dish h1 {
+            margin: 30px auto;
+            border: 5px ridge #835794;
+            background-color: white;
+            text-shadow: 2px 3px 4px;
+            text-align: center;
+            padding: 10px;
+            max-width: 80%;
+        }
+
+        .img {
+            display: block;
+            margin: 0 auto;
+            height: auto;
+            max-width: 80%;
+        }
+
+        .famous_dishes {
+            margin: 20px auto;
+            padding: 20px;
+            border: 5px ridge black;
+            background-color: white;
+            max-width: 80%;
+        }
+
+        .famous_dishes h2, .famous_dishes h3 {
+            text-align: center;
+            font-size: 2em;
+            padding: 10px;
+        }
+
+        .famous_dishes p {
+            text-align: justify;
+            font-size: 1.2em;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #835794;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        footer p {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            header div p {
+                font-size: 20px;
+            }
+
+            nav ul {
+                margin-right: 20px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            .intro h1, .dish h1 {
+                font-size: 2em;
+            }
+
+            .intro p {
+                font-size: 1.2em;
+            }
+
+            .famous_dishes h2, .famous_dishes h3 {
+                font-size: 1.5em;
+            }
+
+            .famous_dishes p {
+                font-size: 1em;
+            }
+        }
+ 

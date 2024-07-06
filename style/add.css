@@ -1,0 +1,202 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #DDAFEE;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #835794;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header div img {
+            margin-left: 15px;
+            height: 50px;
+            width: 50px;
+        }
+
+        header div p {
+            margin: 0;
+            margin-left: 10px;
+            font-size: 30px;
+            color: white;
+            text-shadow: 1px 2px 3px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-right: 50px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #835794;
+        }
+
+        main {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: #DDAFEE;
+        }
+
+        .form p {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 4px double black;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 70%;
+        }
+
+        form {
+            border: 10px groove #835794;
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 70%;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 1px 2px 3px;
+            width: 100px;
+        }
+
+        .input {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="tel"],
+        form input[type="date"],
+        form input[type="email"] {
+            height: 30px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        form textarea {
+            height: auto;
+            resize: none;
+            width: 100%;
+            padding: 10px;
+        }
+
+        fieldset {
+            margin-top: 30px;
+            border: 1px solid #835794;
+            padding: 20px;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        form input[type="submit"] {
+            color: white;
+            font-weight: bold;
+            background-color: #835794;
+            height: 40px;
+            width: 100px;
+            margin: 20px 0;
+            display: block;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:active {
+            transform: translateY(4px);
+        }
+
+        footer {
+           
+            background-color: #835794;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        footer p {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            header div p {
+                font-size: 20px;
+            }
+
+            nav ul {
+                margin-right: 20px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            .form p {
+                font-size: 1.2em;
+                max-width: 90%;
+            }
+
+            form {
+                max-width: 90%;
+            }
+
+            .form-group {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .label,
+            .input {
+                width: 100%;
+                margin: 0;
+            }
+
+            form input[type="submit"] {
+                margin: 20px auto;
+            }
+        }
